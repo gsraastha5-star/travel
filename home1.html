@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .booking-container {
+      background: rgba(255,255,255,0.9);
+      padding: 30px;
+      border-radius: 15px;
+      width: 350px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    .booking-container h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+      font-weight: bold;
+      color: #444;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    button {
+      background: #ff7e5f;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover {
+      background: #e86447;
+    }
+  </style>
+</head>
+<body>
+  <div class="booking-container">
+    <h1>Hotel Booking</h1>
+    <form>
+      <label for="destination">Destination</label>
+      <input type="text" id="destination" placeholder="Enter city or hotel name" required>
+
+      <label for="checkin">Check-in Date</label>
+      <input type="date" id="checkin" required>
+
+      <label for="checkout">Check-out Date</label>
+      <input type="date" id="checkout" required>
+
+      <label for="guests">Guests</label>
+      <select id="guests">
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4+ Guests</option>
+      </select>
+
+      <button type="submit">Search Hotels</button>
+    </form>
+  </div>
+</body>
+</html>
+
